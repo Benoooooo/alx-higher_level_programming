@@ -1,4 +1,2 @@
-#!/bin/bash
-import py_compile
-py_compile.compile('$PYFILE')
-'__pycache__\$PYFILE'
+#!/usr/bin/python3
+import PYFILE
