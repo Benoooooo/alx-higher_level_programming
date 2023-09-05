@@ -1,2 +1,4 @@
 #!/bin/bash
-python3 -h $PYFILEc
+import py_compile
+py_compile.compile('$PYFILE')
+'__pycache__\$PYFILE'
