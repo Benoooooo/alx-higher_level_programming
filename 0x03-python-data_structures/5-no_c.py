@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-#5-no_c.py
-#kelechi nnadi <alx swe school>
+# 5-no_c.py
+# kelechi nnadi <alx swe school>
 
 def no_c(my_string):
     """function that removes all characters c
