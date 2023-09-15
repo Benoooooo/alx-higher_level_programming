@@ -5,8 +5,5 @@
 def no_c(my_string):
     """function that removes all characters c
     and C from a string"""
-    for i in my_string:
-        if  i == 'c' or i == 'C':
-            continue
-        my_string[i]
-        return my_string
+    copy = [x for x in my_string if x != 'c' and x != 'C']
+    return("".join(copy))
