@@ -8,7 +8,7 @@ def multiple_returns(sentence):
 
     if sentence == '':
         sentence[0] = None
-        return sentence
+        return tuple(sentence)
     else:
         t = sentence[0]
         r = len(sentence)
