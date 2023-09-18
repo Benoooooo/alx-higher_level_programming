@@ -6,11 +6,12 @@ def max_integer(my_list=[]):
     """ function that prints the biggest integer
     and not allowed to use max() function if the
     list is empty return  None"""
-    if my_list == []:
-        return None
+
     largest = my_list[0]
     for i in range(1, len(my_list)):
-       if my_list[1] > largest:
-           largest = my_list[i]
+        if my_list == []:
+            return None
+        else:
+            my_list[1] > largest:
+            largest = my_list[i]
     return largest
-       
