@@ -17,46 +17,46 @@ class Rectangle:
         self.width = width
         self.height = height
 
-        @property
-        def width(self):
-            """ Gent width of the rectangle"""
-            return self.__width
+    @property
+    def width(self):
+        """ Gent width of the rectangle"""
+        return self.__width
 
-        @width.setter
-        def width(self, value):
-            """set the width of the rectangle
+    @width.setter
+    def width(self, value):
+        """set the width of the rectangle
 
-            Args:
-              value (int): the new width value
+        Args:
+            value (int): the new width value
 
-            Raises:
-                TypeError: if the value is not an integer.
+        Raises:
+            TypeError: if the value is not an integer.
 
-            ValueError: if the value is not an than 0"""
+        ValueError: if the value is not an than 0"""
 
-            if type(value) is not int:
-                raise TypeError("width must do the integer")
-            if value < 0:
-                raise ValueError("width must be >= 0")
-            self.__width = value
+        if type(value) is not int:
+            raise TypeError("width must do the integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
 
-        @property
-        def height(self):
-            """Get height of rectangle"""
-            return self.__width
+    @property
+    def height(self):
+        """Get height of rectangle"""
+        return self.__width
 
-        @width.setter
-        def width(self, value):
-            """set the height of the rectangle
+    @width.setter
+    def width(self, value):
+        """set the height of the rectangle
 
-            Args:
-              value (int): the new height value
-            Raises:
-                TypeError: if the value is not an integer.
-            ValueError: if the value is less than 0."""
+        Args:
+            value (int): the new height value
+        Raises:
+            TypeError: if the value is not an integer.
+        ValueError: if the value is less than 0."""
 
-            if type(value) is not int:
-                raise TypeError("width must do the integer")
-            if value < 0:
-                raise ValueError("width must be >= 0")
-            self.__height = value
+        if type(value) is not int:
+            raise TypeError("width must do the integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__height = value
