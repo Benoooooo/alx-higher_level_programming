@@ -15,11 +15,11 @@ class Rectangle(Base):
         Args:
             width (int): The width of the rectangle.
             height (int): The height of the rectangle.
-            x (int, optional): The x-coordinate of the rectangle's position. 
+            x (int, optional): The x-coordinate of the rectangle's position.
             y (int, optional): The y-coordinate of the rectangle's position..
-            id (int, optional): The unique identifier of the rectangle. 
+            id (int, optional): The unique identifier of the rectangle.
 
-        """ 
+        """
         super().__init__(id)
         self.__width = width
         self.__height = height
