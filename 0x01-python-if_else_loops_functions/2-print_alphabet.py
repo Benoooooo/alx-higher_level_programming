@@ -2,5 +2,5 @@
 # file: 2-print_alphabet.py
 # Auth: kelechi nnadi <alx swe>
 
-for i in range(97, 122):
+for i in range(97, 123):
     print("{}".format(chr(i)), end="")
