@@ -1,5 +1,5 @@
-
-ntains classes for working with Polygons.
+#!/usr/bin/python3
+"""Contains classes for working with Polygons.
 """
 from .rectangle import Rectangle
 
