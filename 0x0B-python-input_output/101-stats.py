@@ -42,4 +42,3 @@ try:
     printer()
 except KeyboardInterrupt as e:
         printer()
-
