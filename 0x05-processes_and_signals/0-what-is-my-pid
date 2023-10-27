@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Auth: kelechi nnadi <alx swe>
+# write a bash script that displays its own PID
+
+ps
