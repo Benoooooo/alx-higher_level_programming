@@ -4,5 +4,4 @@
 
 echo "USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND"
 
-ps -e -o user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,cmd --forest | tail -n +2
-
+ps aux --forest | tail -n +2
