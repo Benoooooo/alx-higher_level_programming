@@ -5,33 +5,27 @@
 if __name__ == '__main__':
     """ program that imports all functions from the file
     calculator_1.py and handles basic opeations """
-    import calculator_1
+    from calculator_1 import add, sub, mul, div
     import sys
 
-    n = len(sys.argv) - 1
-
-    if n != 3:
+    if len(sys.argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        print(1)
-    else:
-       addi = lambda a, b: a + b
-       subi = lambda a, b: a - b
-       divi = lambda a, b: a / b
-       muli = lambda a, b: a * b
-       res = 0
-       for i in sys.argv:
-           res += int(i)
-       if op != addi:
-           print("Unknown operator. Available operators: +, -, * and /")
-           print(1)
-       elif op != subi:
-           print("Unknown operator. Available operators: +, -, * and /")
-           print(1)
-       elif op != divi:
-           print("Unknown operator. Available operators: +, -, * and /")
-           print(1)
-       elif op != muli:
-           print("Unknown operator. Available operators: +, -, * and /")
-           print(1)
-       print("{} {} {} = {} ".format(a, op, b, calculator_1(a, b)))
+        sys.exit(1)
 
+    a = int(sys.argv[1])
+    operator = sys.argv[2]
+    b = int(sys.argv[3])
+
+    if operator == '+':
+        result = add(a, b)
+    elif operator == '-':
+        result = sub(a, b)
+    elif operator == '*':
+        result = mul(a, b)
+    elif operator == '/':
+        result = div(a, b)
+    else:
+        print("Unknown operator. Available operators: +, -, * and /")
+        sys.exit(1)
+    
+    print("{} {} {} = {}".format(a, operator, b, result))
