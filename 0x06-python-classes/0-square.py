@@ -2,7 +2,10 @@
 # file: 0-square.py
 # Auth: kelechi nnadi <@alx swe>
 
-class Square:
-    pass
+""" write an emepty class"""
 
-p = Square()
+
+class Square:
+    """ defines empyth class"""
+
+    pass
