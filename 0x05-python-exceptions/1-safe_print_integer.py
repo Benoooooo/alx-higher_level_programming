@@ -4,10 +4,8 @@
 
 def safe_print_integer(value):
     """function that print an integer with "{}".format()"""
-    count = 0
     try:
         print("{:d}".format(value))
-        count += 1
+        return True
     except ValueError:
-        pass
-    return count
+        return False
