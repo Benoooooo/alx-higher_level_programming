@@ -9,4 +9,6 @@ class Square:
     """wiriting a square class"""
 
     def __init__(self, size):
+        """initializing the argument"""
         self._size = size
+
