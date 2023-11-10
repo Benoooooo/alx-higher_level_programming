@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-# 0-square.py
-# Brennan D Baraban <375@holbertonschool.com>
-"""Define a class Square."""
-
+# file: 0-square.py
+# Auth: kelechi nnadi <@alx swe>
 
 class Square:
-    """Represent a square."""
     pass
+
