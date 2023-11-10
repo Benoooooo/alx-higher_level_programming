@@ -10,5 +10,5 @@ class Square:
 
     def __init__(self, size):
         """initializing the argument"""
-        self._size = size
+        self.__size = size
 
