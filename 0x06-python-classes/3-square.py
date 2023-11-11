@@ -14,6 +14,8 @@ class Square:
         elif size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
+        """initializing the size of file if checked"""
+
 
     def area(self):
         """ check the area of the size and return
