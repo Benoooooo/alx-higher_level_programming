@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 # file: 6-square.py
 # Auth: kelechi nnadi <@alx swe>
-
 """ define the 6-square.py class"""
 
 
@@ -19,6 +18,7 @@ class Square:
 
     @property
     def size(self):
+        """get the current size of the square"""
         return self.__size
 
     @size.setter
@@ -31,6 +31,7 @@ class Square:
 
     @property
     def position(self):
+        """get the private instance attribuet position."""
         self.__position
 
     @position.setter
@@ -43,9 +44,11 @@ class Square:
         self.__position = value
 
     def area(self):
+        """return the current area of teh square."""
         self.__size ** 2
 
     def my_print(self):
+        """print the square withe # character"""
         if self.__size == 0:
             print("")
             return
