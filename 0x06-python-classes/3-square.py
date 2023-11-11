@@ -6,7 +6,7 @@
 
 
 class Square:
-""" class definition on the size"""    
+"""class definition on the size"""    
 
     def __init__(self, size):
 
