@@ -7,24 +7,11 @@
 
 class Square:
     """a class representing a square.
-
-    Attributs:
-    __six (int): the size of the square.
-
-    Methods:
-        area(): calculates and returns the area of the square.
     """
 
-    def __init__(self, size):
+    def __init__(self, size=0):
         """
         Initializes a square instance.
-
-        Args:
-            size (int): the size of the square
-
-        Raises:
-            TypeError: if size is not an integer.
-            ValueError: if size is less than 0
         """
 
         if not isinstance(size, int):
