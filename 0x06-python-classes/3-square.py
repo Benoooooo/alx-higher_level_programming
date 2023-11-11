@@ -6,7 +6,7 @@
 
 
 class Square:
-    """ class defining the data of square"""
+    
 
     def __init__(self, size):
 
