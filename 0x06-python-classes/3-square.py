@@ -16,7 +16,6 @@ class Square:
         self.__size = size
         """initializing the size of file if checked"""
 
-
     def area(self):
         """ check the area of the size and return
         """
