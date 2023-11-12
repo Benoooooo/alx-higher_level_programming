@@ -1,10 +1,33 @@
 >>> add_integer = __import__('0-add_integer').add_integer
+
+
 >>> add_integer(1, 2)
 3
+
+the function also works with the floating-point values
+
 >>> add_integer(100, -2)
 98
->>> add_integer(2)
+
+the numbers also works with highest number
+
+>>> add_integer(100, 2)
 100
+
+the number was casted to floating point
+
 >>> add_integer(100.3, -2)
 98
->>>	
+
+>>> add_integer("hello", 3)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(2, "hello")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer(None)
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>>
