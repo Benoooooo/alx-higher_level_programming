@@ -1,22 +1,22 @@
 #!/usr/bin/python3
-
-"""This module adds 2 inteders"""
+# file: 0-add_integer.py
+# Auth: kelechi nnadi <@alx swe>
+"""
+This module defines a function called 'add_integer' that adds two numbers
+        result = add_integer(5, 3)
+        print(result)  # Output: 8
+ """
 
 
 def add_integer(a, b=98):
-    """This function does the addition of a and ``b
-    args:
-        a (union[int, float]): first number
-        b (union[int, float], optional): second number
-    returns:
-        the result of the addition
     """
-    if a is None or (type(a) is not int and type(a) is not float):
-        raise TypeError('a must be an integer')
-    if b is None or (type(b) is not int and type(b) is not float):
-        raise TypeError('b must be an integer')
+    This is the docstring for the 'add_integer' function.
+    """
 
-    result = a + b
-    if result == float('inf') or result == -float('inf'):
-        return 89
-    return int(a) + int(b)
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError("a must be an integer or b must be an integer")
+
+    a = int(a)
+    b = int(b)
+
+    return a + b
