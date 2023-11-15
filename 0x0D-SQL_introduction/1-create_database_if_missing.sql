@@ -2,4 +2,4 @@
 -- Auth: kelechi nnadi <@alx swe>
 -- a script that create a database hbtn_0c_0 in your MySQL server
 
-CREATE DATABASE hbtn_0c_0 [IF EXIT]
+CREATE DATABASE hbtn_0c_0 
