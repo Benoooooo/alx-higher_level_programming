@@ -1,8 +1,10 @@
 #!/usr/bin/node
 const args = process.argv.slice(2);
 
-if (!args[0]) {
-  console.log(args 'is' args);
+if (args.length >= 2) {
+  console.log(`${args[0]} is ${args[1]}`);
+} else if (args.length === 1) {
+  console.log(`${args[0]} is ${undefined}`);
 } else {
-  console.log(args[0]);
+  console.log(`${undefined} is ${undefined}`);
 }
