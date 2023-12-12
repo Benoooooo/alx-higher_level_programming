@@ -3,8 +3,7 @@ const args = process.argv.slice(2);
 const firstArg = args[0];
 
 if (Number.isInteger(parseInt(firstArg))) {
-	console.log(`My number: ${parseInt(firstArg)}`);
+  console.log(`My number: ${parseInt(firstArg)}`);
 } else {
-	console.log('Not a number');
+  console.log('Not a number');
 }
-
