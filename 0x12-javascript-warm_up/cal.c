@@ -2,12 +2,18 @@
 int main(void)
 {
 	int i = 0;
-	int x = 2;
+	int x = 4;
 
-	while (i < 2)
+	while (i < x)
 	{
-		printf("hello");
+		int j = 0;
+		while (j < x)
+		{
+			printf("hello");
+			j++;
+		}
 		i++;
+		printf("\n");
 	}
 	return (0);
 }
