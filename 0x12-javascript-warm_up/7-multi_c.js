@@ -7,10 +7,10 @@ const le = 'C is fun';
 
 let index = 0;
 if (Number.isInteger(parseInt(x))) {
-  while (index < x.length) {
-    console.log(le[index]);
+  while (index < x) {
+    console.log(le);
     index++;
   }
 } else {
-  console.log("Missing number of occurrences");
+  console.log('Missing number of occurrences');
 }
