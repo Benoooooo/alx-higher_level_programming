@@ -1,12 +1,13 @@
 #!/usr/bin/node
 const args = process.argv.slice(2);
-const first = args[0];
-const sec = args[1];
+const first = parseInt(args[0]);
+const sec = parseInt(args[1]);
 
 function add(a, b) {
-  if (Number.isInteger(parseInt(first),(sec))) {
-    let sum = first + sec;
-    console.log(sum);
+  if (Number.isInteger(a) && Number.isInteger(b)) {
+    return a + b;
+  } else {
+    return "NAN";
   }
 }
-add(a 
+console.log(add(first, sec));
