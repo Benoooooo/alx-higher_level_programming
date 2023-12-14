@@ -4,13 +4,14 @@ const size = args[0];
 
 let index = 0;
 let index1 = 0;
+let row;
 if (Number.isInteger(parseInt(size))) {
-  while (index < size) {
-    while (index1 < size) {
-      console.log('X');
-      index1++;
+  for (index = 0; index < size; index++) {
+    row = '';
+    for (index1 = 0; index1 < size; index1++) {
+      row += 'X';
     }
-    index++;
+    console.log(row);
   }
 } else {
   console.log('Missing size');
