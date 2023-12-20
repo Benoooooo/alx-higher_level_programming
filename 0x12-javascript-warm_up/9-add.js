@@ -7,7 +7,7 @@ function add (a, b) {
   if (Number.isInteger(a) && Number.isInteger(b)) {
     return a + b;
   } else {
-    return 'NAN';
+    return 'NaN';
   }
 }
 console.log(add(first, sec));
