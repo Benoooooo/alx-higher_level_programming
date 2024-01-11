@@ -1,16 +1,14 @@
 #!/usr/bin/python3
 '''
-write a python script that fetches the url provided
+This script fetches the status from the provided URL usingthe requests package.
 '''
 
 import requests
 
-if __name__ == '__main__':
-    url = 'https://alx-intranet.hbtn.io/status'
+if __name__ == "__main__":
+    url = "https://alx-intranet.hbtn.io/status"
 
-    response = requests.get(url)
-
-    if response.status_code == 200:
-        print(response.text)
-    else:
-        print(f"Request failed with status code: {response.status_code}")
+    res = requests.get(url)
+    print('Body response:')
+    print("\t- type: {}".format(type(res.text)))
+    print("\t- utf8 content: {}".format(res.text))
